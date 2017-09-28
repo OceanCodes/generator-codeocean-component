@@ -1,0 +1,25 @@
+{
+  "name": "generator-component",
+  "version": "1.0.0",
+  "description": "yeoman generator for react components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OceanCodes/generator-component.git"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": "CodeOcean",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OceanCodes/generator-component/issues"
+  },
+  "homepage": "https://github.com/OceanCodes/generator-component#readme",
+  "dependencies": {
+    "yeoman-generator": "^2.0.0"
+  }
+}
