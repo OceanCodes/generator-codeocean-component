@@ -1,0 +1,8 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorEmail": "info@codeocean.com",
+      "authorUrl": ""
+    }
+  }
+}

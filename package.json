@@ -1,25 +1,75 @@
 {
-  "name": "generator-component",
+  "name": "generator-codeocean-component",
   "version": "1.0.0",
   "description": "yeoman generator for react components",
+  "homepage": "https://github.com/OceanCodes/generator-component#readme",
+  "author": "CodeOcean",
+  "files": ["component"],
   "main": "index.js",
+  "keywords": ["yeoman-generator"],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.1.0",
+    "eslint-config-prettier": "^2.4.0",
+    "eslint-config-xo": "^0.18.2",
+    "eslint-plugin-prettier": "^2.2.0",
+    "husky": "^0.14.3",
+    "jest": "^21.0.0",
+    "jest-cli": "^21.0.0",
+    "lint-staged": "^4.2.1",
+    "nsp": "^2.6.3",
+    "prettier": "^1.7.0",
+    "yeoman-assert": "^3.0.0",
+    "yeoman-test": "^1.6.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "pretest": "eslint .",
+    "precommit": "lint-staged"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OceanCodes/generator-component.git"
   },
-  "keywords": [
-    "yeoman-generator"
-  ],
-  "author": "CodeOcean",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/OceanCodes/generator-component/issues"
   },
-  "homepage": "https://github.com/OceanCodes/generator-component#readme",
   "dependencies": {
-    "yeoman-generator": "^2.0.0"
+    "yeoman-generator": "^1.0.0",
+    "chalk": "^1.1.3",
+    "yosay": "^2.0.0"
+  },
+  "jest": {
+    "testMatch": ["**/__tests__/**/*.js?(x)"],
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    },
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
+  },
+  "eslintConfig": {
+    "extends": ["xo", "prettier"],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "printWidth": 90
+        }
+      ]
+    },
+    "plugins": ["prettier"]
   }
 }
