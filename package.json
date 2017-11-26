@@ -1,6 +1,6 @@
 {
   "name": "generator-codeocean-component",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "yeoman generator for react components",
   "homepage": "https://github.com/OceanCodes/generator-component#readme",
   "author": "CodeOcean",
