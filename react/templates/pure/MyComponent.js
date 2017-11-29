@@ -9,8 +9,6 @@ type State = {};
 export default class <%= componentName %> extends PureComponent <Props, State> {
   static defaultProps = {};
 
-  props: Props;
-
   render() {
     return (
       <div />
