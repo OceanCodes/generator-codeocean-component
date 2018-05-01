@@ -8,7 +8,6 @@
   "main": "index.js",
   "keywords": ["yeoman-generator"],
   "devDependencies": {
-    "babel-cli": "^6.26.0",
     "babel-jest": "^21.2.0",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-preset-env": "^1.6.0",
@@ -18,10 +17,9 @@
     "eslint-config-xo": "^0.18.2",
     "eslint-plugin-prettier": "^2.2.0",
     "husky": "^0.14.3",
-    "jest": "^21.0.0",
-    "jest-cli": "^21.0.0",
+    "jest": "^22.0.4",
     "lint-staged": "^4.2.1",
-    "nsp": "^2.6.3",
+    "nsp": "^3.2.1",
     "prettier": "^1.7.0",
     "yeoman-assert": "^3.0.0",
     "yeoman-test": "^1.6.0"
